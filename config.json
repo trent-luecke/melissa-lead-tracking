@@ -1,0 +1,19 @@
+{
+  "avoma": {
+    "enabled": true,
+    "lookback_hours": 48,
+    "sales_rep_emails": ["melissa@teambuildr.com"],
+    "filter_internal": true
+  },
+  "google_sheets": {
+    "spreadsheet_id": "1o2mcdeHV6Lxm70J6pvcByGNBcY44d_QZ6r5NYHOLTJs",
+    "lead_tracker_tab": "LEAD TRACKER"
+  },
+  "slack": {
+    "melissa_user_id": "U07EJE9B3NG"
+  },
+  "ai_model": "claude-sonnet-4-6",
+  "pending_recs_file": "data/pending_recs.json",
+  "processed_uuids_file": "data/processed_uuids.json",
+  "pending_rec_ttl_days": 7
+}

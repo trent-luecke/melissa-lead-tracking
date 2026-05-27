@@ -1,0 +1,16 @@
+name = "melissa-lead-manager"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# KV namespace for tracking active pending recommendations by thread_ts.
+# Replace PLACEHOLDER_KV_ID with the real ID after running:
+#   wrangler kv:namespace create "PENDING_RECS_KV"
+# The command outputs the namespace ID to paste below.
+kv_namespaces = [
+  { binding = "PENDING_RECS_KV", id = "ecfcc5033f5942db9912c57d04a1cef3" }
+]
+
+# Secrets (set via `wrangler secret put <NAME>`):
+#   SLACK_SIGNING_SECRET  — from Slack app "Basic Information" page
+#   GITHUB_PAT            — fine-grained PAT with Actions: write on GITHUB_REPO
+#   GITHUB_REPO           — e.g. "trentluecke/claude-projects"
