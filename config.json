@@ -1,7 +1,7 @@
 {
   "avoma": {
     "enabled": true,
-    "lookback_hours": 48,
+    "lookback_hours": 648,
     "sales_rep_emails": ["melissa@teambuildr.com"],
     "filter_internal": true
   },
